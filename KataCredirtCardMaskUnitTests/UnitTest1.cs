@@ -1,3 +1,5 @@
+using FluentAssertions;
+
 namespace KataCredirtCardMaskUnitTests;
 
 public class UnitTest1
@@ -15,6 +17,15 @@ public class UnitTest1
         var actual = DoTheThing(sut);
 
         actual.Should().Be(expected);
+    }
+
+    private string DoTheThing(string input)
+    {
+        var end = input.TakeLast(4).ToString();
+        var total = input.Length - 4;
+        var output = new String('#', total);
+        output += end;
+        return output;
     }
 
     // "What was the name of your first pet?" 'Skippy' // should return "##ippy"
