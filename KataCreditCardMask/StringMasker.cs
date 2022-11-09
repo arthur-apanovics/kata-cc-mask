@@ -12,16 +12,32 @@ public class StringMasker
 
     private static string GetMaskedSection(string input)
     {
-        var maskedLength = input.Length - UnmaskedCharLength;
-        
-        if (maskedLength < 0)
-        {
-            return string.Empty;
-        }
-
-        var maskedSection = new string(MaskingChar, maskedLength);
+        var maskedLength = GetMaskedLength(input);
+        maskedLength = EnsureMaskedLengthIsNotNegative(maskedLength);
+        var maskedSection = CreateMaskedSection(maskedLength);
         
         return maskedSection;
+    }
+
+    private static string CreateMaskedSection(int maskedLength)
+    {
+        var maskedSection = new string(MaskingChar, maskedLength);
+        return maskedSection;
+    }
+
+    private static int EnsureMaskedLengthIsNotNegative(int maskedLength)
+    {
+        if (maskedLength < 0)
+        {
+            maskedLength = 0;
+        }
+
+        return maskedLength;
+    }
+
+    private static int GetMaskedLength(string input)
+    {
+        return input.Length - UnmaskedCharLength;
     }
 
     private static string GetUnmaskedSection(string input)
