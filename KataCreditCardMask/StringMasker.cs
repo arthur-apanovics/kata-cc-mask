@@ -12,6 +12,9 @@ public class StringMasker
     private static string GetMaskedSection(string input)
     {
         var maskedLength = input.Length - UnmaskedCharLength;
+        if (maskedLength < 0)
+            maskedLength = 0;
+
         var maskedSection = new string('#', maskedLength);
         return maskedSection;
     }

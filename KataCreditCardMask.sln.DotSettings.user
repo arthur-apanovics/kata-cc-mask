@@ -3,4 +3,9 @@
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::8D8664C9-2B79-4949-AFE3-14BA0DB1F05F::net6.0::KataCredirtCardMaskUnitTests.UnitTest1.ShouldMaskString&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=732b8cb8_002Df5b3_002D4328_002Da3fe_002Db0726a06c83e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ShouldMaskString" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::8D8664C9-2B79-4949-AFE3-14BA0DB1F05F::net6.0::KataCredirtCardMaskUnitTests.UnitTest1.ShouldMaskString&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

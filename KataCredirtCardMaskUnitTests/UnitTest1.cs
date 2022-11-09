@@ -9,12 +9,13 @@ public class UnitTest1
     // '64607935616' // should return "#######5616"
     // '1' // should return "1"
     // '' // should return ""
-    [Fact]
-    public void ShouldMaskString()
+    [Theory]
+    [InlineData("4556364607935616", "############5616")]
+    [InlineData("64607935616", "#######5616")]
+    [InlineData("1", "1")]
+    [InlineData("", "")]
+    public void ShouldMaskString(string input, string expected)
     {
-        var expected = "############5616";
-        var input = "4556364607935616";
-
         var actual = StringMasker.Mask(input);
 
         actual.Should().Be(expected);
