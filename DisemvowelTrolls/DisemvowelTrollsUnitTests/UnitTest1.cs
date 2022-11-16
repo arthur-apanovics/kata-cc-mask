@@ -1,3 +1,5 @@
+using FluentAssertions;
+
 namespace DisemvowelTrollsUnitTests;
 
 public class UnitTest1
