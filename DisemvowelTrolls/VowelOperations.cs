@@ -2,13 +2,16 @@ namespace DisemvowelTrollsUnitTests;
 
 public class VowelOperations
 {
-    private static readonly char[] vowels = new[] { 'a', 'e', 'i', 'o', 'u' };
+    private static readonly string[] vowels = { "a", "e", "i", "o", "u" };
     public static string Remove(string input)
     {
-        string result;
+        var result = input;
+
         foreach (var vowel in vowels)
         {
-            result = input.Replace(vowel, string.Empty);
+            result = result.Replace(vowel, string.Empty, StringComparison.InvariantCultureIgnoreCase);
         }
+
+        return result;
     }
 }
