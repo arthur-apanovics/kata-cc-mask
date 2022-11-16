@@ -4,6 +4,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KataCreditCardMask", "KataC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KataCredirtCardMaskUnitTests", "KataCredirtCardMaskUnitTests\KataCredirtCardMaskUnitTests.csproj", "{8D8664C9-2B79-4949-AFE3-14BA0DB1F05F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DisemvowelTrolls", "DisemvowelTrolls", "{E6EFF47D-1754-4F45-8417-4E245660FB7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisemvowelTrolls", "DisemvowelTrolls\DisemvowelTrolls.csproj", "{DAD26735-4B35-4475-AB9F-23B482CCDA2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisemvowelTrollsUnitTests", "DisemvowelTrolls\DisemvowelTrollsUnitTests\DisemvowelTrollsUnitTests.csproj", "{D6ED16A3-60D0-4092-9949-000BC1745103}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +24,17 @@ Global
 		{8D8664C9-2B79-4949-AFE3-14BA0DB1F05F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D8664C9-2B79-4949-AFE3-14BA0DB1F05F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D8664C9-2B79-4949-AFE3-14BA0DB1F05F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAD26735-4B35-4475-AB9F-23B482CCDA2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAD26735-4B35-4475-AB9F-23B482CCDA2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAD26735-4B35-4475-AB9F-23B482CCDA2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAD26735-4B35-4475-AB9F-23B482CCDA2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6ED16A3-60D0-4092-9949-000BC1745103}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6ED16A3-60D0-4092-9949-000BC1745103}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6ED16A3-60D0-4092-9949-000BC1745103}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6ED16A3-60D0-4092-9949-000BC1745103}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DAD26735-4B35-4475-AB9F-23B482CCDA2E} = {E6EFF47D-1754-4F45-8417-4E245660FB7F}
+		{D6ED16A3-60D0-4092-9949-000BC1745103} = {E6EFF47D-1754-4F45-8417-4E245660FB7F}
 	EndGlobalSection
 EndGlobal
